@@ -1,0 +1,18 @@
+URL replace commands
+###############################
+https://nanodistg.wpengine.com/wp-content/uploads/2022/01/banner-mask.svg
+
+
+wp search-replace https://nanodistg.wpengine.com/wp-content https://nanodi-uploads.s3.amazonaws.com --all-tables --precise --dry-run
+wp search-replace https://nanodistg.wpengine.com/wp-content https://nanodi-uploads.s3.amazonaws.com --all-tables --precise
+wp cache flush
+
+
+wp search-replace implystage.wpengine.com/wp-content imply-uploads.s3.amazonaws.com --all-tables --precise --dry-run
+wp search-replace implystage.wpengine.com/wp-content imply-uploads.s3.amazonaws.com --all-tables --precise
+wp cache flush
+
+
+wp search-replace imply.local/wp-content imply-uploads.s3.amazonaws.com --all-tables --precise --dry-run
+wp search-replace imply.local/wp-content imply-uploads.s3.amazonaws.com --all-tables --precise
+wp cache flush
